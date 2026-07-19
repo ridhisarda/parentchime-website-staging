@@ -678,8 +678,8 @@ h3 {
 
 .site-footer {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(180px, 0.5fr) minmax(220px, 0.5fr);
-  gap: 28px;
+  grid-template-columns: minmax(220px, 1fr) minmax(260px, 1fr) minmax(280px, 1.1fr);
+  gap: clamp(24px, 4vw, 56px);
   padding: 42px clamp(20px, 6vw, 90px);
   border-top: 1px solid var(--line);
   background: var(--white);
@@ -694,6 +694,8 @@ h3 {
   display: block;
   margin-top: 8px;
   font-weight: 650;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .site-footer h3 {
@@ -734,6 +736,16 @@ h3 {
 
   .phone {
     width: min(46vw, 280px);
+  }
+}
+
+@media (max-width: 1040px) {
+  .site-footer {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .site-footer > div:first-child {
+    grid-column: 1 / -1;
   }
 }
 
