@@ -455,42 +455,6 @@ h3 {
   line-height: 1.6;
 }
 
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 14px;
-}
-
-.stat-card {
-  min-height: 230px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 22px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--white);
-}
-
-.stat-card strong {
-  color: var(--teal-dark);
-  font-size: clamp(42px, 5vw, 62px);
-  line-height: 1;
-}
-
-.stat-card span {
-  color: #415163;
-  font-size: 16px;
-  line-height: 1.45;
-  font-weight: 650;
-}
-
-.stat-card a {
-  color: var(--teal);
-  font-size: 13px;
-  font-weight: 850;
-}
-
 .adult-apps {
   background: var(--ink);
   color: var(--white);
@@ -678,7 +642,7 @@ h3 {
 
 .site-footer {
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) minmax(260px, 1fr) minmax(280px, 1.1fr);
+  grid-template-columns: minmax(220px, 1fr) minmax(260px, 1fr);
   gap: clamp(24px, 4vw, 56px);
   padding: 42px clamp(20px, 6vw, 90px);
   border-top: 1px solid var(--line);
@@ -778,7 +742,6 @@ h3 {
     margin: 0 auto;
   }
 
-  .stats-grid,
   .comparison-grid,
   .pro-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -867,7 +830,6 @@ h3 {
     scroll-snap-align: start;
   }
 
-  .stats-grid,
   .comparison-grid,
   .pro-grid {
     grid-template-columns: 1fr;
@@ -875,10 +837,6 @@ h3 {
 
   .pro-grid article:last-child {
     grid-column: auto;
-  }
-
-  .stat-card {
-    min-height: 190px;
   }
 
   .store-button {

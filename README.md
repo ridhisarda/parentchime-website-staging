@@ -8,8 +8,7 @@
    - Real product screenshots from launch assets.
 
 2. Why Tracking Matters
-   - Credible proof points from HHS / APA, Springer, India TV, and UNICEF.
-   - Frames the issue as parent stress, micronutrient gaps, diabetes risk, and rising childhood obesity.
+   - Frames the issue around changing pediatric needs, growth, routines, picky eating, illness, and supplementation.
 
 3. Why Adult Apps Do Not Solve This
    - Adult fitness apps are built around personal weight goals.
@@ -34,9 +33,8 @@
    - Image capture for easy nutrition tracking.
    - Micronutrient insights.
 
-7. Contact and Sources
+7. Contact
    - Contact email placeholders.
-   - Source links in footer.
 
 ## Required Inputs Before Launch
 
