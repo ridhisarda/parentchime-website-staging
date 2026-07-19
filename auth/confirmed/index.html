@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Email confirmed | Parentchime</title>
+    <meta
+      name="description"
+      content="Your Parentchime email has been confirmed. You can now sign in to the app."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#0D9488" />
+    <link rel="canonical" href="https://www.parentchime.com/auth/confirmed/" />
+    <link rel="icon" href="/assets/icon.png?v=brand-icon-20260708" />
+    <link rel="apple-touch-icon" href="/assets/icon.png?v=brand-icon-20260708" />
+    <link rel="stylesheet" href="/styles.css?v=brand-icon-20260708" />
+  </head>
+  <body class="confirmation-page">
+    <main class="confirmation-shell" aria-labelledby="confirmation-title">
+      <a class="brand confirmation-brand" href="/" aria-label="Parentchime home">
+        <img class="brand-icon" src="/assets/icon.png?v=brand-icon-20260708" alt="" />
+        <span>Parentchime</span>
+      </a>
+
+      <section class="confirmation-panel">
+        <p class="eyebrow">Account confirmed</p>
+        <h1 id="confirmation-title">Thank you. Your email is confirmed.</h1>
+        <p class="lead">
+          You can now return to the Parentchime app and log in with the email
+          address and password you used during signup.
+        </p>
+        <div class="confirmation-actions">
+          <a
+            id="open-app-link"
+            class="confirmation-button primary"
+            href="parentchime:///auth/callback"
+          >
+            Open the app
+          </a>
+          <a class="confirmation-button" href="/">
+            Visit Parentchime web
+          </a>
+        </div>
+      </section>
+    </main>
+    <script>
+      (function () {
+        var appLink = document.getElementById('open-app-link');
+        if (!appLink) return;
+
+        var suffix = window.location.search || window.location.hash || '';
+        appLink.href = 'parentchime:///auth/callback' + suffix;
+      })();
+    </script>
+  </body>
+</html>
